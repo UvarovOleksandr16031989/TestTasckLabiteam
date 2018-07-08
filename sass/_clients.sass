@@ -1,0 +1,126 @@
+.clients
+  display: block
+  padding: 45px 17px 10px 17px
+  width: 64%
+
+.clients_box__content__item__label
+  color: #44ace9
+
+.clients_box__content__item__label__iput
+  display: none
+
+.clients_box__content__more
+  display: none
+
+.clients_box__content__item__label__iput:checked+.clients_box__content__more
+  display: inline-block
+
+.clients_box
+  padding: 20px 25px 22px 21px
+  border: 1px solid #f0f0ed
+  margin-bottom: 7px
+
+.clients_box__title
+  @include font-Roboto(16px,500)
+  color: #44ace9
+
+.clients_box__header__content
+  color: #959595
+  @include font-Roboto(13px,400)
+  line-height: 20px
+
+
+.clients_box__header__content--bold
+  @extend .clients_box__header__content
+  color: #444343
+  padding-right: 18px
+  position: relative
+  &:after
+    content: ''
+    height: 12px
+    width: 1px
+    display: inline-block
+    background-color: #d0d0d0
+    position: absolute
+    right: 9px
+    top: 0px
+
+
+.clients_box__header__content--blue
+  @include font-Roboto(13px,400)
+  color: #44ace9
+
+.clients_box__header
+  padding: 17px 0 24px 0
+
+.clients_box__content__item
+  @include font-Roboto(13px,400)
+  color: #252525
+  line-height: 19.46px
+
+.clients_box__content
+  padding-bottom: 18px
+
+.clients_box__bottom__category
+  color: #959595
+  @include font-Roboto(13px,400)
+
+.clients_box__bottom__category_item
+  @extend .clients_box__bottom__category
+  color: #444343
+  margin-right: 20px
+  position: relative
+  &:after
+    content: ''
+    height: 12px
+    width: 1px
+    display: inline-block
+    background-color: #d0d0d0
+    position: absolute
+    right: -10px
+    top: 0px
+
+
+.clients_box__bottom__skills
+  @extend .clients_box__bottom__category
+
+.clients_box__bottom__skills_item
+  display: inline-block
+  padding: 11px
+  background-color: #f6f6f5
+  color: #707070
+  @include font-Roboto(13px,400)
+  margin-right: 4px
+  border-radius: 4px
+
+.clients_box__bottom__skills_item--blue
+  color: #44ace9
+  @include font-Roboto(13px,400)
+
+.clients_box__bottom
+  padding-bottom: 15px
+
+.clients_box__rating__client
+  color: #959595
+  @include font-Roboto(13px,400)
+
+.clients_box__rating__client__rating
+  @extend .clients_box__rating__client
+  color: #444343
+.clients_box__rating__client__rating__assessment
+  @extend .clients_box__rating__client__rating
+  padding: 0 5px 0 8px
+
+.clients_box__rating
+  position: relative
+
+.clients_box__rating__client__stars--yellow
+  position: absolute
+  top: 2px
+
+.clients_box__rating__client__stars
+  @extend .clients_box__rating__client__stars--yellow
+
+.clients_box:first-child
+  font-style: oblique
+

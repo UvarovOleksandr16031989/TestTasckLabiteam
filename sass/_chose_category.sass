@@ -1,0 +1,195 @@
+.chose_category
+  display: block
+  padding: 0 0 0 9px
+  background-color: #f5f5f2
+  width: 29%
+  border-radius: 5px
+.wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  flex-direction: row
+
+.chose_category__categori__select
+  margin-top: 6px
+  width: 203px
+  height: 33px
+  border: 1px solid #d2d2cd
+  padding-left: 10px
+  border-radius: 3px
+
+.chose_category__category
+  padding: 18px 0 25px 0
+
+.chose_category__category__title
+
+  color: #252525
+  @include font-Roboto(14px,700)
+
+.chose_category__category_option
+  color: #444343
+  @include font-Roboto(13px,300)
+
+.chose_category__subcategory__title
+  @extend .chose_category__category__title
+
+.chose_category__subcategory__content
+  margin: 0 0  0 30px
+  color: #444343
+  @include font-Roboto(13px,400)
+
+
+.chose_category__subcategory__content--bold
+  @extend .chose_category__subcategory__content
+  font-weight: 700
+  margin: 0
+
+.chose_category__subcategory__label
+  display: block
+  position: relative
+  cursor: pointer
+  padding-top: 13px
+  z-index: 2
+  &:before
+    content: ''
+    width: 19px
+    height: 19px
+    border: 1px solid #d2d2cd
+    display: inline-block
+    top: 10px
+    position: absolute
+    border-radius: 3px
+
+
+
+.chose_category__subcategory_checkbox
+  display: none
+  position: relative
+
+.chose_category__subcategory_checkbox:checked+.chose_category__subcategory__content
+  &:before
+    content: ''
+    width: 15px
+    height: 13px
+    display: inline-block
+    background: url("../images/pic/icon/subcategory_checked.png") no-repeat
+    background-size: cover
+    position: absolute
+    left: 3px
+    top: 15px
+
+.chose_category__rating__title
+  @extend .chose_category__category__title
+
+
+.chose_category__rating__content--bold
+  @extend .chose_category__subcategory__content--bold
+
+.chose_category__rating__label__checkbox>.chose_category__rating__content--bold
+  padding-left: 20px
+
+.chose_category__rating__label
+  display: block
+
+.chose_category__rating__label--checkbox
+  display: block
+
+.chose_category__rating__label__content
+  @extend .chose_category__subcategory__content
+
+.chose_category__rating
+  padding-top: 28px
+.chose_category__rating__label__radio
+  display: none
+
+.chose_category__rating__label__radio:checked+.chose_category__rating__label__content
+  &:before
+    content: ''
+    position: absolute
+    width: 11px
+    height: 11px
+    background: url("../images/pic/icon/rating_checked.png") no-repeat
+    background-size: cover
+    left: 5px
+    top: 15px
+
+.chose_category__rating__label
+  position: relative
+  padding-top: 13px
+  &:before
+    content: ''
+    display: inline-block
+    width: 19px
+    height: 20px
+    border: 1px solid #d2d2cd
+    border-radius: 30px
+    top: 10px
+    position: absolute
+
+.chose_category__rating__label--checkbox
+  position: relative
+  padding-top: 13px
+  &:after
+    content: ''
+    display: inline-block
+    position: absolute
+    width: 19px
+    height: 19px
+    border: 1px solid #d2d2cd
+    border-radius: 3px
+    top: 10px
+    left: 1px
+
+.chose_category__rating__label__checkbox
+  display: none
+
+.chose_category__rating__label__checkbox:checked+.chose_category__rating__label__content
+  &:before
+    content: ''
+    position: absolute
+    width: 12px
+    height: 11px
+    background: url("../images/pic/icon/rating_checkbox.png") no-repeat
+    background-size: cover
+    left: 6px
+    top: 15px
+
+.chose_category__budget_box__title
+  @extend .chose_category__category__title
+
+.chose_category__budget_box__select
+  @extend .chose_category__categori__select
+
+.chose_category__budget_box__select__option
+  @extend .chose_category__category_option
+
+.chose_category__delivery_box__title
+  @extend  .chose_category__category__title
+
+.chose_category__delivery_box__select
+  @extend .chose_category__categori__select
+
+.chose_category__delivery_box__select__option
+  @extend .chose_category__category_option
+
+.chose_category__location_box__title
+  @extend  .chose_category__category__title
+
+.chose_category__location_box__select
+  @extend .chose_category__categori__select
+
+.chose_category__location_box__select__option
+  @extend .chose_category__category_option
+
+.chose_category__location_box
+  @extend .chose_category__delivery_box
+  padding-bottom: 115px
+
+.chose_category__delivery_box
+
+  padding-top: 25px
+
+.chose_category__budget_box
+  @extend .chose_category__delivery_box
+
+
